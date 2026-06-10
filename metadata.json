@@ -1,0 +1,8 @@
+{
+  "name": "Y2K MP3 Player",
+  "description": "A retro Y2K styled MP3 player with playlist folders and playback controls.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
