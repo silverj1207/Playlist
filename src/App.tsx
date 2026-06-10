@@ -120,7 +120,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen font-sans text-[#1d1d1f] flex items-center justify-center p-4 md:p-8"
+    <div className="min-h-screen font-sans text-[#1d1d1f] flex p-4 md:p-8"
          style={{
              backgroundImage: 'radial-gradient(circle at 50% 0%, #ffffff 0%, #f5f5f7 100%)'
          }}>
@@ -131,7 +131,7 @@ export default function App() {
         onEnded={handleEnded}
       />
       {/* Main Container */}
-      <div className="w-full max-w-5xl glass-panel rounded-[2rem] p-6 lg:p-8 flex flex-col gap-8 relative overflow-hidden">
+      <div className="m-auto w-full max-w-5xl glass-panel rounded-[2rem] p-4 sm:p-6 lg:p-8 flex flex-col gap-6 sm:gap-8 relative overflow-hidden">
         
         {/* Header */}
         <div className="flex justify-between items-center px-2">
@@ -141,10 +141,10 @@ export default function App() {
           <div className="text-sm font-semibold text-gray-500 uppercase tracking-widest">루mi</div>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-6 h-[400px] lg:h-[450px]">
+        <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 lg:h-[450px]">
           
           {/* Folders List (Left Side) */}
-          <div className="w-full lg:w-1/3 bg-white/50 backdrop-blur-md rounded-3xl p-4 flex flex-col gap-2 overflow-y-auto border border-white/60 shadow-sm">
+          <div className="w-full lg:w-1/3 bg-white/50 backdrop-blur-md rounded-3xl p-4 flex flex-col gap-2 overflow-y-auto border border-white/60 shadow-sm max-h-[200px] lg:max-h-none lg:h-full">
             <h3 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2 px-2 mt-2">Playlists</h3>
             <div className="flex flex-col gap-1">
               {MOCK_PLAYLISTS.map((playlist) => (
@@ -165,7 +165,7 @@ export default function App() {
           </div>
 
           {/* Songs List (Right Side) */}
-          <div className="flex-1 w-full bg-white/50 backdrop-blur-md rounded-3xl p-4 lg:p-6 flex flex-col gap-2 overflow-y-auto border border-white/60 shadow-sm">
+          <div className="flex-1 w-full bg-white/50 backdrop-blur-md rounded-3xl p-4 lg:p-6 flex flex-col gap-2 overflow-y-auto border border-white/60 shadow-sm h-[350px] lg:h-full">
             <div className="flex items-center justify-between px-2 mb-4 mt-1">
               <h3 className="text-2xl font-bold tracking-tight text-gray-900">
                 {activePlaylist ? activePlaylist.name : 'Select a Playlist'}
@@ -219,7 +219,7 @@ export default function App() {
         </div>
 
         {/* Player Section */}
-        <div className="flex flex-col md:flex-row gap-6 lg:gap-8 mt-2 items-center bg-white/80 backdrop-blur-xl rounded-[2rem] p-4 lg:p-6 shadow-sm border border-white">
+        <div className="flex flex-col md:flex-row gap-4 sm:gap-6 lg:gap-8 mt-2 items-center bg-white/80 backdrop-blur-xl rounded-[2rem] p-4 lg:p-6 shadow-sm border border-white">
           
           {/* Now Playing Info (Left) */}
           <div className="flex items-center gap-4 w-full md:w-1/4 min-w-[200px]">
